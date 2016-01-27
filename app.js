@@ -20,6 +20,6 @@ app.get('*', function(req, res) {
 	res.set('Content-type', 'text/json');
 });
 
-app.listen(port, function() {
+app.listen(process.env.PORT || port, function() {
 	console.log('Server is running on port ' + port);
 });
